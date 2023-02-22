@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-require('dotenv').config();
+require("dotenv").config();
 
-const MONGO_URL = process.env.MONGO_URL
+const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.set("strictQuery", false);
 mongoose.connection.once("open", () => {
